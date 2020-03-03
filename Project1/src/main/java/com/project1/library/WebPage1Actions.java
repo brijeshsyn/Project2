@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import com.project1.webelements.Page1Elements;
 import com.wma.framework.common.CommonWebActions;
 
+import static com.project1.webelements.Page1Elements.*;
+
 public class WebPage1Actions extends CommonWebActions<Page1Elements>{
 	
 	WebDriver driver;
@@ -22,8 +24,27 @@ public class WebPage1Actions extends CommonWebActions<Page1Elements>{
 		return false;
 	}	
 	
-	public void launchApplication() {
-		
+	public void clickLearnHtml() {
+		click(LEARN_HTML_LINK);
 	}
+	
+	public void clickNext() {
+		click(NEXT);
+	}
+	
+	public void clickPrevious() {
+		click(PREVIOUS);
+	}
+	
+	public void clickHome() {
+		click(HOME);
+	}
+	
+	public boolean isPageTitle(String pageTitle) {
+		return getPageTitle().equalsIgnoreCase(pageTitle);
+	}
+	
+	
+	
 
 }

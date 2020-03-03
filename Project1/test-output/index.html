@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
               <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,8 +101,8 @@
                     </span>
                     <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.project1.testscripts.TestCase1" class="method navigator-link" hash-for-method="test1(PocTest1)">test1(PocTest1)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project1.testscripts.WebPageTestCase1" hash-for-method="test1(Web Based application test)">test1(Web Based application test)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -120,23 +120,35 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.project1.testscripts.TestCase1</span>
+              <span class="class-name">com.project1.testscripts.WebPageTestCase1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1(PocTest1)">
-                  </a> <!-- test1(PocTest1) -->
+                  <a name="test1(Web Based application test)">
+                  </a> <!-- test1(Web Based application test) -->
                   <span class="method-name">test1</span>
-                  <span class="parameters">(PocTest1)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.wma.framework.common.WebDriverFactory.createInstance(WebDriverFactory.java:139)
-	at com.wma.framework.common.WebDriverFactory.getWebDriver(WebDriverFactory.java:158)
-	at com.wma.framework.common.InitTest.getWebDriver(InitTest.java:64)
-	at com.project1.testscripts.TestCase1.test1(TestCase1.java:25)
-	at com.wma.framework.driver.DriverScript.startExecution(DriverScript.java:106)
+                  <span class="parameters">(Web Based application test)</span>
+                  <div class="stack-trace">java.util.regex.PatternSyntaxException: Illegal character range near index 10
+[^a-zA-ZQ-9]
+          ^
+	at java.util.regex.Pattern.error(Pattern.java:1955)
+	at java.util.regex.Pattern.range(Pattern.java:2655)
+	at java.util.regex.Pattern.clazz(Pattern.java:2562)
+	at java.util.regex.Pattern.sequence(Pattern.java:2063)
+	at java.util.regex.Pattern.expr(Pattern.java:1996)
+	at java.util.regex.Pattern.compile(Pattern.java:1696)
+	at java.util.regex.Pattern.&lt;init&gt;(Pattern.java:1351)
+	at java.util.regex.Pattern.compile(Pattern.java:1028)
+	at java.lang.String.replaceAll(String.java:2210)
+	at com.wma.framework.util.ScreenShot.getScreenShot(ScreenShot.java:43)
+	at com.wma.framework.report.TestRailAndExtentReporter.log(TestRailAndExtentReporter.java:94)
+	at com.wma.framework.common.InitTest.finallyMethod(InitTest.java:138)
+	at com.project1.testscripts.WebPageTestCase1.test1(WebPageTestCase1.java:55)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.wma.framework.driver.DriverScript.startExecution(DriverScript.java:104)
 	at com.project1.driver.Project1Driver.main(Project1Driver.java:10)
-... Removed 22 stack frames
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -149,12 +161,12 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite configfailurepolicy=&quot;continue&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;Test_0&quot;&gt;
-    &lt;parameter name=&quot;TCTitle&quot; value=&quot;PocTest1&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test_0&quot;&gt;
+    &lt;parameter name=&quot;TCTitle&quot; value=&quot;Web Based application test&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.project1.testscripts.TestCase1&quot;/&gt;
+      &lt;class name=&quot;com.project1.testscripts.WebPageTestCase1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test_0 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -197,13 +209,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
-data.setCell(0, 2, 'com.project1.testscripts.TestCase1')
-data.setCell(0, 3, 120093);
+data.setCell(0, 2, 'com.project1.testscripts.WebPageTestCase1')
+data.setCell(0, 3, 193606);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -229,7 +241,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.project1.testscripts.TestCase1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.project1.testscripts.WebPageTestCase1</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
@@ -237,12 +249,18 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test1(PocTest1)</span>
-                <span class="method-start">46480 ms</span>
+                <span class="method-name">test1(Web Based application test)</span>
+                <span class="method-start">85 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterClass</span>
+                <span class="method-start">193698 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuit</span>
-                <span class="method-start">177554 ms</span>
+                <span class="method-start">198005 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
