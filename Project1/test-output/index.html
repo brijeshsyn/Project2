@@ -129,26 +129,13 @@
                   </a> <!-- test1(Web Based application test) -->
                   <span class="method-name">test1</span>
                   <span class="parameters">(Web Based application test)</span>
-                  <div class="stack-trace">java.util.regex.PatternSyntaxException: Illegal character range near index 10
-[^a-zA-ZQ-9]
-          ^
-	at java.util.regex.Pattern.error(Pattern.java:1955)
-	at java.util.regex.Pattern.range(Pattern.java:2655)
-	at java.util.regex.Pattern.clazz(Pattern.java:2562)
-	at java.util.regex.Pattern.sequence(Pattern.java:2063)
-	at java.util.regex.Pattern.expr(Pattern.java:1996)
-	at java.util.regex.Pattern.compile(Pattern.java:1696)
-	at java.util.regex.Pattern.&lt;init&gt;(Pattern.java:1351)
-	at java.util.regex.Pattern.compile(Pattern.java:1028)
-	at java.lang.String.replaceAll(String.java:2210)
-	at com.wma.framework.util.ScreenShot.getScreenShot(ScreenShot.java:43)
-	at com.wma.framework.report.TestRailAndExtentReporter.log(TestRailAndExtentReporter.java:94)
-	at com.wma.framework.common.InitTest.finallyMethod(InitTest.java:138)
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at com.wma.framework.common.InitTest.finallyMethod(InitTest.java:161)
 	at com.project1.testscripts.WebPageTestCase1.test1(WebPageTestCase1.java:55)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
 	at com.wma.framework.driver.DriverScript.startExecution(DriverScript.java:104)
 	at com.project1.driver.Project1Driver.main(Project1Driver.java:10)
-... Removed 25 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -210,12 +197,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'com.project1.testscripts.WebPageTestCase1')
-data.setCell(0, 3, 193606);
+data.setCell(0, 3, 143421);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,17 +237,15 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test1(Web Based application test)</span>
-                <span class="method-start">85 ms</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">afterClass</span>
-                <span class="method-start">193698 ms</span>
+                <span class="method-start">143488 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuit</span>
-                <span class="method-start">198005 ms</span>
+                <span class="method-start">146147 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
