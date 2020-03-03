@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [Suite]">
+  <test name="Test_0(failed)">
+    <parameter name="TCTitle" value="PocTest1"/>
+    <classes>
+      <class name="com.project1.testscripts.TestCase1">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuit"/>
+        </methods>
+      </class> <!-- com.project1.testscripts.TestCase1 -->
+    </classes>
+  </test> <!-- Test_0(failed) -->
+</suite> <!-- Failed suite [Suite] -->
